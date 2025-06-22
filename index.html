@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Selaa</title>
+</head>
+<body>
+    <header>
+
+        <img src="/img/logo.png" alt="" class="logo">
+        <pre>انسخ الرابط , او اذهب الى الموقع مباشرة</pre>
+    </header>
+
+    <section class="content">
+        <div class="card">
+            <h3 class="title-card">السيدة آمنة </h3>
+            <div class="img-card">
+                <img src="/img/Amina.jpg" alt="">
+            </div>
+
+            <button class="copy-btn" onclick="copyToClipboard('https://maps.app.goo.gl/vPuYP1MS5tbVVELd7?g_st=in') && showNotification()" ><i class="fa-solid fa-copy"></i>  نسخ الموقع</button>
+            <button class="go-btn" onclick="goToLocation('https://maps.app.goo.gl/vPuYP1MS5tbVVELd7?g_st=in' )"><i class="fa-solid fa-location-dot"></i> اذهب الان</button>
+        
+        </div>
+        
+    </section>
+
+     <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <span>تم نسخ الرابط بنجاح!</span>
+    </div>
+
+    <footer>
+        <span>جميع الحقوق محفوظة ©2025 </span>
+    </footer>
+</body>
+</html>
