@@ -106,11 +106,19 @@ header pre {
     border-radius: 10px;
     box-shadow: 2px 3px 6px rgba(1, 1, 1, 56%);
     cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-.copy-btn:hover {
-    transition: 0.3s ease;
-    background-color: #F9F4E7;
+@media (hover: hover) {
+    .copy-btn:hover {
+        background-color: #F9F4E7;
+    }
+}
+
+.copy-btn:active {
+    background-color: #e6c9a0;
+    transform: translateY(2px);
 }
 
 .go-btn {
